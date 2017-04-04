@@ -1,0 +1,6 @@
+C:\Users\prana\tiy\week-4\day-2\DotNetUniversity\DotNetUniversity\bin\Debug\DotNetUniversity.exe.config
+C:\Users\prana\tiy\week-4\day-2\DotNetUniversity\DotNetUniversity\bin\Debug\DotNetUniversity.exe
+C:\Users\prana\tiy\week-4\day-2\DotNetUniversity\DotNetUniversity\bin\Debug\DotNetUniversity.pdb
+C:\Users\prana\tiy\week-4\day-2\DotNetUniversity\DotNetUniversity\obj\Debug\DotNetUniversity.csprojResolveAssemblyReference.cache
+C:\Users\prana\tiy\week-4\day-2\DotNetUniversity\DotNetUniversity\obj\Debug\DotNetUniversity.exe
+C:\Users\prana\tiy\week-4\day-2\DotNetUniversity\DotNetUniversity\obj\Debug\DotNetUniversity.pdb
