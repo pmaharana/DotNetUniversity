@@ -18,15 +18,28 @@ namespace DotNetUniversity
             //open with using statement
             using (var connection = new SqlConnection(connectionString))
             {
-                
-                var sqlCommand = new SqlCommand(@"select * from Courses", connection);
+
+                var sqlCommand = new SqlCommand(
+                    @"select Courses.Title, Courses.CourseNumber, Instructor.Name 
+                        from Courses 
+                        join Instructor on Instructor.Id = Courses.Instructor" 
+                                ,connection);
+
+
+                                                    
+
+
+
+
+
+
                 connection.Open();
                 var reader = sqlCommand.ExecuteReader();
                 while (reader.Read())
                 {
-                    Console.WriteLine(reader["Title"] + "--" + reader["CourseNumber"]);
+                    Console.WriteLine("Course Name: " + reader[0] + " Course Number: " + reader[1] + " Instructor: " + reader[2]);
                 }
-                
+                Console.ReadLine();
                 connection.Close();
 
             }
