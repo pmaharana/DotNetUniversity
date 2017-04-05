@@ -76,7 +76,7 @@ namespace DotNetUniversity
             //    while (reader.Read())
             //    {
             //        Console.WriteLine("Course Name: " + reader[0] + " Course Number: " + reader[1] + " Instructor: " + reader[2]);
-                   
+
 
             //    }
             //    Console.ReadLine();
@@ -85,28 +85,28 @@ namespace DotNetUniversity
 
             //}
 
-            //using (var connection = new SqlConnection(connectionString))
-            //{
+            using (var connection = new SqlConnection(connectionString))
+            {
 
-            //    //queries the result from SQL, all courses and instructor teaching the class
-            //    var sqlCommand = new SqlCommand(
-            //                    @"select count(Distinct Instructor.Name), count(Courses.Title)
-            //                    from Courses
-            //                    Join Instructor on Instructor.Id = Courses.Instructor"
-            //                    , connection);
-            //    //Opens connection
-            //    connection.Open();
-            //    //while the reader reads, write out the sql query results
-            //    var reader = sqlCommand.ExecuteReader();
-            //    while (reader.Read())
-            //    {
-            //        Console.WriteLine("Total number of teachers: " + reader[0] + " Total number of Classes: " + reader[1]);
-            //        Console.WriteLine("");
-            //    }
-            //    Console.ReadLine();
-            //    connection.Close();
+                //queries the result from SQL, all courses and instructor teaching the class
+                var sqlCommand = new SqlCommand(
+                                @"select count(Distinct Instructor.Name), count(Courses.Title)
+                                from Courses
+                                Join Instructor on Instructor.Id = Courses.Instructor"
+                                , connection);
+                //Opens connection
+                connection.Open();
+                //while the reader reads, write out the sql query results
+                var reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine("Total number of teachers: " + reader[0] + " Total number of Classes: " + reader[1]);
+                    Console.WriteLine("");
+                }
+                Console.ReadLine();
+                connection.Close();
 
-            //}
+            }
 
 
 
